@@ -1,6 +1,6 @@
 ## PART 1
 
-# Hatchery Simulation Program
+# Software Development
 
 This program simulates the operation of a fish hatchery, managing various aspects such as fish species, technician wages, inventory (supplies), and purchasing materials from vendors. It handles quarterly operations, fish sales, material consumption, and updates the hatchery's cash balance based on various expenses.
 
@@ -127,6 +127,8 @@ This project is licensed under the MIT License.
 
 
 ## PART 2
+
+# Data Analytics
 
 This project provides an analysis of datasets fetched from Kaggle, including their views, upvotes, and other attributes. The data is processed, visualized, and analyzed for correlations and linear relationships.
 
