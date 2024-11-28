@@ -116,6 +116,364 @@ To run the simulation program, follow these steps:
 5. **Add vendors**: Create `Vendor` instances and add them to the hatchery's vendor list.
 6. **Run the simulation**: Use methods such as `sell_fish()` and `calculate_and_print_expenses()` to simulate a quarter's operations.
 
+## Example Run
+
+Please enter number of quarters: 8
+
+=== Quarter 1 ===
+Enter number of technicians: 2
+Enter the name of Technician 1 for quarter 1: James
+Does James have a specialty? (yes=1/no=0): 1
+Enter the fish type James specializes in: Clef Fins
+Hired James, weekly rate=500, specialty=Clef Fins in quarter 1
+Enter the name of Technician 2 for quarter 1: Richard
+Does Richard have a specialty? (yes=1/no=0): 0
+Hired Richard, weekly rate=500, specialty=None in quarter 1
+
+=== Sales situation ===
+Fish Clef Fins, demand 25, sell 25: 25
+Fish Timpani Snapper, demand 10, sell 10: 10
+Fish Andalusian Brim, demand 15, sell 15: 15
+Insufficient ingredients:
+ Fertiliser need 2.0 storage 25.65
+ Feed need 200000.0 storage 120000.00
+ Salt need 40000.0 storage 200000.00
+Fish Plagal Cod, demand 20, sell 20: 0
+Fish Fugue Flounder, demand 30, sell 30: 0
+Fish Modal Bass, demand 50, sell 50: 0
+
+=== Sales Summary ===
+Total revenue from fish sales: 13500.00
+
+=== Updated Materials Inventory ===
+Material Fertiliser warehouse cost: 2.56
+Material Feed warehouse cost: 120.00
+Material Salt warehouse cost: 200.00
+
+=== List of Vendors ===
+1. Slippery Lakes
+Fertiliser: £0.3/litre
+Feed: £0.0001/g
+Salt: £5e-05/g
+2. Scaly Wholesaler
+Fertiliser: £0.2/litre
+Feed: £0.0004/g
+Salt: £0.00025/g
+>>> Enter number of vendor to purchase from: 1
+
+Selected Vendor: Slippery Lakes
+Expense for Fertiliser: £4.50 (Purchase amount: 15.0)
+Expense for Feed: £49.20 (Purchase amount: 492000.0)
+Expense for Salt: £5.00 (Purchase amount: 100000.0)
+
+Total expenses for materials: £58.70
+
+=== Quarterly Expenses ===
+Paid James, weekly rate=500 amount 6000.00
+Paid Richard, weekly rate=500 amount 6000.00
+Paid rent/utilities 1500.00
+Total quarterly expenses: 13500.00
+Remaining cash after quarter 1: 9618.73
+
+=== Quarter 2 ===
+Enter number of technicians: -1
+Removed technician Richard in quarter 2
+
+=== Sales situation ===
+Fish Clef Fins, demand 25, sell 25: 25
+Fish Timpani Snapper, demand 10, sell 10: 10
+Fish Andalusian Brim, demand 15, sell 15: 15
+Insufficient labour: required 8.00, available 2.17
+Fish Plagal Cod, demand 20, sell 20: 0
+Fish Fugue Flounder, demand 30, sell 30: 0
+Fish Modal Bass, demand 50, sell 50: 0
+
+=== Sales Summary ===
+Total revenue from fish sales: 13500.00
+
+=== Updated Materials Inventory ===
+Material Fertiliser warehouse cost: 2.56
+Material Feed warehouse cost: 120.00
+Material Salt warehouse cost: 200.00
+
+=== List of Vendors ===
+1. Slippery Lakes
+Fertiliser: £0.3/litre
+Feed: £0.0001/g
+Salt: £5e-05/g
+2. Scaly Wholesaler
+Fertiliser: £0.2/litre
+Feed: £0.0004/g
+Salt: £0.00025/g
+>>> Enter number of vendor to purchase from: 1
+
+Selected Vendor: Slippery Lakes
+Expense for Fertiliser: £4.50 (Purchase amount: 15.0)
+Expense for Feed: £49.20 (Purchase amount: 492000.0)
+Expense for Salt: £5.00 (Purchase amount: 100000.0)
+
+Total expenses for materials: £58.70
+
+=== Quarterly Expenses ===
+Paid James, weekly rate=500 amount 6000.00
+Paid rent/utilities 1500.00
+Total quarterly expenses: 7500.00
+Remaining cash after quarter 2: 15237.47
+
+=== Quarter 3 ===
+Enter number of technicians: 0
+No change in technician count for quarter 3.
+
+=== Sales situation ===
+Fish Clef Fins, demand 25, sell 25: 25
+Fish Timpani Snapper, demand 10, sell 10: 10
+Fish Andalusian Brim, demand 15, sell 15: 15
+Insufficient labour: required 8.00, available 2.17
+Fish Plagal Cod, demand 20, sell 20: 0
+Fish Fugue Flounder, demand 30, sell 30: 0
+Fish Modal Bass, demand 50, sell 50: 0
+
+=== Sales Summary ===
+Total revenue from fish sales: 13500.00
+
+=== Updated Materials Inventory ===
+Material Fertiliser warehouse cost: 2.56
+Material Feed warehouse cost: 120.00
+Material Salt warehouse cost: 200.00
+
+=== List of Vendors ===
+1. Slippery Lakes
+Fertiliser: £0.3/litre
+Feed: £0.0001/g
+Salt: £5e-05/g
+2. Scaly Wholesaler
+Fertiliser: £0.2/litre
+Feed: £0.0004/g
+Salt: £0.00025/g
+>>> Enter number of vendor to purchase from: 1
+
+Selected Vendor: Slippery Lakes
+Expense for Fertiliser: £4.50 (Purchase amount: 15.0)
+Expense for Feed: £49.20 (Purchase amount: 492000.0)
+Expense for Salt: £5.00 (Purchase amount: 100000.0)
+
+Total expenses for materials: £58.70
+
+=== Quarterly Expenses ===
+Paid James, weekly rate=500 amount 6000.00
+Paid rent/utilities 1500.00
+Total quarterly expenses: 7500.00
+Remaining cash after quarter 3: 20856.21
+
+=== Quarter 4 ===
+Enter number of technicians: 2
+Enter the name of Technician 1 for quarter 4: Richard
+Does Richard have a specialty? (yes=1/no=0): 0
+Hired Richard, weekly rate=500, specialty=None in quarter 4
+Enter the name of Technician 2 for quarter 4: Lee
+Does Lee have a specialty? (yes=1/no=0): 0
+Hired Lee, weekly rate=500, specialty=None in quarter 4
+
+=== Sales situation ===
+Fish Clef Fins, demand 25, sell 25: 25
+Fish Timpani Snapper, demand 10, sell 10: 10
+Fish Andalusian Brim, demand 15, sell 15: 15
+Insufficient ingredients:
+ Fertiliser need 2.0 storage 25.65
+ Feed need 200000.0 storage 120000.00
+ Salt need 40000.0 storage 200000.00
+Fish Plagal Cod, demand 20, sell 20: 0
+Fish Fugue Flounder, demand 30, sell 30: 0
+Fish Modal Bass, demand 50, sell 50: 0
+
+=== Sales Summary ===
+Total revenue from fish sales: 13500.00
+
+=== Updated Materials Inventory ===
+Material Fertiliser warehouse cost: 2.56
+Material Feed warehouse cost: 120.00
+Material Salt warehouse cost: 200.00
+
+=== List of Vendors ===
+1. Slippery Lakes
+Fertiliser: £0.3/litre
+Feed: £0.0001/g
+Salt: £5e-05/g
+2. Scaly Wholesaler
+Fertiliser: £0.2/litre
+Feed: £0.0004/g
+Salt: £0.00025/g
+>>> Enter number of vendor to purchase from: 1
+
+Selected Vendor: Slippery Lakes
+Expense for Fertiliser: £4.50 (Purchase amount: 15.0)
+Expense for Feed: £49.20 (Purchase amount: 492000.0)
+Expense for Salt: £5.00 (Purchase amount: 100000.0)
+
+Total expenses for materials: £58.70
+
+=== Quarterly Expenses ===
+Paid James, weekly rate=500 amount 6000.00
+Paid Richard, weekly rate=500 amount 6000.00
+Paid Lee, weekly rate=500 amount 6000.00
+Paid rent/utilities 1500.00
+Total quarterly expenses: 19500.00
+Remaining cash after quarter 4: 14474.94
+
+=== Quarter 5 ===
+Enter number of technicians: 0
+No change in technician count for quarter 5.
+
+=== Sales situation ===
+Fish Clef Fins, demand 25, sell 25: 25
+Fish Timpani Snapper, demand 10, sell 10: 10
+Fish Andalusian Brim, demand 15, sell 15: 15
+Insufficient ingredients:
+ Fertiliser need 2.0 storage 25.65
+ Feed need 200000.0 storage 120000.00
+ Salt need 40000.0 storage 200000.00
+Fish Plagal Cod, demand 20, sell 20: 0
+Fish Fugue Flounder, demand 30, sell 30: 0
+Fish Modal Bass, demand 50, sell 50: 0
+
+=== Sales Summary ===
+Total revenue from fish sales: 13500.00
+
+=== Updated Materials Inventory ===
+Material Fertiliser warehouse cost: 2.56
+Material Feed warehouse cost: 120.00
+Material Salt warehouse cost: 200.00
+
+=== List of Vendors ===
+1. Slippery Lakes
+Fertiliser: £0.3/litre
+Feed: £0.0001/g
+Salt: £5e-05/g
+2. Scaly Wholesaler
+Fertiliser: £0.2/litre
+Feed: £0.0004/g
+Salt: £0.00025/g
+>>> Enter number of vendor to purchase from: 1
+
+Selected Vendor: Slippery Lakes
+Expense for Fertiliser: £4.50 (Purchase amount: 15.0)
+Expense for Feed: £49.20 (Purchase amount: 492000.0)
+Expense for Salt: £5.00 (Purchase amount: 100000.0)
+
+Total expenses for materials: £58.70
+
+=== Quarterly Expenses ===
+Paid James, weekly rate=500 amount 6000.00
+Paid Richard, weekly rate=500 amount 6000.00
+Paid Lee, weekly rate=500 amount 6000.00
+Paid rent/utilities 1500.00
+Total quarterly expenses: 19500.00
+Remaining cash after quarter 5: 8093.68
+
+=== Quarter 6 ===
+Enter number of technicians: 0
+No change in technician count for quarter 6.
+
+=== Sales situation ===
+Fish Clef Fins, demand 25, sell 25: 25
+Fish Timpani Snapper, demand 10, sell 10: 10
+Fish Andalusian Brim, demand 15, sell 15: 15
+Insufficient ingredients:
+ Fertiliser need 2.0 storage 25.65
+ Feed need 200000.0 storage 120000.00
+ Salt need 40000.0 storage 200000.00
+Fish Plagal Cod, demand 20, sell 20: 0
+Fish Fugue Flounder, demand 30, sell 30: 0
+Fish Modal Bass, demand 50, sell 50: 0
+
+=== Sales Summary ===
+Total revenue from fish sales: 13500.00
+
+=== Updated Materials Inventory ===
+Material Fertiliser warehouse cost: 2.56
+Material Feed warehouse cost: 120.00
+Material Salt warehouse cost: 200.00
+
+=== List of Vendors ===
+1. Slippery Lakes
+Fertiliser: £0.3/litre
+Feed: £0.0001/g
+Salt: £5e-05/g
+2. Scaly Wholesaler
+Fertiliser: £0.2/litre
+Feed: £0.0004/g
+Salt: £0.00025/g
+>>> Enter number of vendor to purchase from: 1
+
+Selected Vendor: Slippery Lakes
+Expense for Fertiliser: £4.50 (Purchase amount: 15.0)
+Expense for Feed: £49.20 (Purchase amount: 492000.0)
+Expense for Salt: £5.00 (Purchase amount: 100000.0)
+
+Total expenses for materials: £58.70
+
+=== Quarterly Expenses ===
+Paid James, weekly rate=500 amount 6000.00
+Paid Richard, weekly rate=500 amount 6000.00
+Paid Lee, weekly rate=500 amount 6000.00
+Paid rent/utilities 1500.00
+Total quarterly expenses: 19500.00
+Remaining cash after quarter 6: 1712.41
+
+=== Quarter 7 ===
+Enter number of technicians: 0
+No change in technician count for quarter 7.
+
+=== Sales situation ===
+Fish Clef Fins, demand 25, sell 25: 25
+Fish Timpani Snapper, demand 10, sell 10: 10
+Fish Andalusian Brim, demand 15, sell 15: 15
+Insufficient ingredients:
+ Fertiliser need 2.0 storage 25.65
+ Feed need 200000.0 storage 120000.00
+ Salt need 40000.0 storage 200000.00
+Fish Plagal Cod, demand 20, sell 20: 0
+Fish Fugue Flounder, demand 30, sell 30: 0
+Fish Modal Bass, demand 50, sell 50: 0
+
+=== Sales Summary ===
+Total revenue from fish sales: 13500.00
+
+=== Updated Materials Inventory ===
+Material Fertiliser warehouse cost: 2.56
+Material Feed warehouse cost: 120.00
+Material Salt warehouse cost: 200.00
+
+=== List of Vendors ===
+1. Slippery Lakes
+Fertiliser: £0.3/litre
+Feed: £0.0001/g
+Salt: £5e-05/g
+2. Scaly Wholesaler
+Fertiliser: £0.2/litre
+Feed: £0.0004/g
+Salt: £0.00025/g
+>>> Enter number of vendor to purchase from: 1
+
+Selected Vendor: Slippery Lakes
+Expense for Fertiliser: £4.50 (Purchase amount: 15.0)
+Expense for Feed: £49.20 (Purchase amount: 492000.0)
+Expense for Salt: £5.00 (Purchase amount: 100000.0)
+
+Total expenses for materials: £58.70
+
+=== Quarterly Expenses ===
+Paid James, weekly rate=500 amount 6000.00
+Paid Richard, weekly rate=500 amount 6000.00
+Paid Lee, weekly rate=500 amount 6000.00
+Paid rent/utilities 1500.00
+Total quarterly expenses: 19500.00
+Remaining cash after quarter 7: -4668.85
+
+Hatchery has gone bankrupt in quarter 7 due to insufficient funds!
+
+Simulation complete!
+
 ## Requirements
 - Python 3.x
 - No external libraries required
